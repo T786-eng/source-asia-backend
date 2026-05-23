@@ -1,0 +1,16 @@
+{
+  "name": "source-asia-assignment",
+  "version": "1.0.0",
+  "description": "Rate-limited API + Product catalog (Source Asia backend assignment)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

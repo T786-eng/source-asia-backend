@@ -1,0 +1,25 @@
+### accept 5
+POST http://localhost:3000/request
+Content-Type: application/json
+
+{ "user_id": "alice", "payload": { "x": 1 } }
+
+### 6th should 429
+POST http://localhost:3000/request
+Content-Type: application/json
+
+{ "user_id": "alice", "payload": { "x": 6 } }
+
+### stats
+GET http://localhost:3000/stats
+
+### create product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Wool Cardigan",
+  "sku": "WC-001",
+  "image_urls": ["https://cdn.example.com/wc1.jpg"],
+  "video_urls": []
+}
